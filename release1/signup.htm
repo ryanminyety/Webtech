@@ -1,44 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>MIS3690 Survey</title>
+	<title>Sign up</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+
 	<style>
-		body{
+	body{
     margin: 0%;
     padding: 0%;
     font-family: sans-serif;
-    background: none;
+    
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fd00da,#19d7f8)
+}
+
+	.menu ul {
+    display:inline-flex;
+    margin: 50px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 50px;
+    color:darkslateblue;
+    cursor: pointer;
+}
+.logo img { 
+    width: 30px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+.activo {
+    color:#19d7f8 !important;
+}
+
+
+.signup {
+    top: 40px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color:#fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(darkgray,darkgray),radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+}
+
+.signup span {
+    display: block;    
+    padding: 8px,22px;
+}
+
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: #19d7f8;
+}
+
+.app-text {
+    width: 50%;
+    float: left;
+}
+
+.app-text h1 {
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+    color:goldenrod;
+}
+
+.app-text p {
+
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #919191;
+}
+.move {
+
+width: 650px;
+font-size: 15px;
+margin: 30px 0 30px 40px;
+line-height: 25px;
+color: #919191;
+
 }
 	td {padding-right:40px}
+
+
 	</style>
 	
 </head>
 <body>
-	<h1>MIS3690 Student Survey</h1>	
-	<p>Please complete the following survey.  You must answer each question.  When you are done,
-		please click on the Submit button.</p>
+
+	<div class="container">
+		<div class="menu">
+		<ul>
+		 <li class="logo"> <img src="clipart2903647.png"></li>
+		   <li class="activo"><a href="index.htm" class="about"><button>Home</a></li></button>
+		   <li><a href="about.htm" class="about"><button>About us</a></li></button>
+		   <li><a href="places.htm" class="places"><button>Places</a></li></button>
+		   <li><a href="about.htm" class="about"><button>Contact us</a></li></button>
+		   <li><a href="signup.htm" class="signup"><span>Sign up</span></a></li>
+ 
+		</ul>
+
+	<div class="app-text"><h1>Sign up to recieve our latest content</h1><div>	
+	<p>Please complete the following survey. Answer each question and when you are done click on the submit button.</p>
 		
 	
 		<form action="http://wtspring13sec2.babson.edu/gordon/mailer.php" method="post">
-
+<p>
 	
-	First Name:<input type= "text" name="lastname" maxlength="100"/>
+	Name:<input type= "text" name="lastname" maxlength="100"/>
 		
-	Last Name:<input type= "text" name="lastname" maxlength="100" >
-   
+	Email:<input type= "text" name="lastname" maxlength="100" >
+</p>  
 		
-
-<p>	Gender: 
-	Male <input type="radio" name="gender" value="male" />Female <input type="radio" name="gender" value="female" checked="checked" /></p>
-		<p>What grade do you expect to receive?
+<div class="move">
+<p>	Are you older than 18? 
+	Yes <input type="radio" name="age" value="yes" />No <input type="radio" name="age" value="no" checked="checked" /></p>
+		<p>What is your overall improvesion about the page?
 			 <select name="D1">
-				 <option value="A">A</option>
-				 <option value="B">B</option>
-				 <option value="C">C</option>
-				 <option value="D">D</option>
-				 <option value="F">F</option>
-				 <option value="W">W</option>
+				 <option value="A">excellent</option>
+				 <option value="B">very good</option>
+				 <option value="C">good</option>
+				 <option value="D">somewhat good</option>
+				 <option value="F">bad</option>
+				 <option value="W">very bad</option>
 				</select></p>
 
 			<table>
@@ -46,18 +147,21 @@
 				    <td> <input type="checkbox" name="N" value="NEWYORK" /> New York </td> </tr>
 				    <tr><td>  <input type="checkbox" name="B" value="BOSTON" /> Boston</td> </tr>
 		            <tr><td>  <input type="checkbox" name="M" value="MIAMI" /> Miami</td></tr>
-					<tr><td>  <input type="checkbox" name="L" value="LOSANGLES" /> Los Amgeles </td></tr>
+					<tr><td>  <input type="checkbox" name="L" value="LOSANGLES" /> Los Angeles </td></tr>
 			</table>
 
 
-                     <div>Please add any comments you have </div>
+                     <div>Please add any suggestions to improve our services </div>
 					 <textarea name="comments" rows="5" cols="29"></textarea>
  <p>
 					 <input type="submit" value="Submit" name="Submit"  />
 					 <input type="reset" value="Reset" name="Reset" />
 					 </p>
+					 </div>
 		</form>
 	
+		
+		   
 </body>
 </html>
 
