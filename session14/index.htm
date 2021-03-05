@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MIS3690 Survey</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<style>
+		#click
+		{
+		position:absolute; 
+		top:0px; 
+		left:0px; }
+		
+		</style>
+
+<script>
+
+
+
+	function moveButton() {
+		var ramdon1 = Math.floor(Math.random()*500);
+		var ramdon2 = Math.floor(Math.random()*500);
+		document.getElementById("click").style.left = ramdon1+"px";
+		document.getElementById("click").style.top = ramdon2+"px";
+		var moveButton = new Array("Click me", "Move me", "Click here", "Button", "Next");
+		var x = document.getElementById("click");
+		x.innerHTML=moveButton[Math.floor(Math.random()*5)];
+   
+}
+</script>
+	
+</head>
+<body>
+	<button id="click" onclick="moveButton()">Click Me!</button>
+	</body>
+</html>
+
